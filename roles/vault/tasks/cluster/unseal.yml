@@ -1,7 +1,8 @@
 ---
 
 - name: cluster/unseal | Current sealed state
-  debug: " Sealed? {{vault_is_sealed}}"
+  debug:
+    msg: "Sealed? {{vault_is_sealed}}"
 
 - name: cluster/unseal | Unseal Vault
   uri:
